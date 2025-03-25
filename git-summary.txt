@@ -1,4 +1,4 @@
-개발자 티셔츠 쇼핑몰 오픈소스
+< git 시작하기 >
 
 1) git 처음 생성시 - git init : 초기화 과정으로 로컬저장소 생성
 2) .git 폴더를 로컬저장소라고 한다.
@@ -13,3 +13,17 @@
     $ git log
 7) 이전 커밋 버전으로 되돌리기
     $ git checkout 로그에서 확인한 커밋 버전
+8) 최신 버전으로 되돌리기
+    $ git checkout -
+
+< 원격저장소 만들기 >
+* Repository - GitHub에서 원격저장소
+1) GitHub에 로그인 
+2) 원격저장소 생성
+   - 상단 + 선택 -> New repository 클릭 -> Repository name 입력 -> Description 입력 -> Create repository 클릭
+   - https://github.com/dawnbell795/iTshirt.git
+3) 원격저장소에 커밋 올리기
+   a) 로컬저장소에 원격저장소 주소 알려주기
+      $ git remote add origin https://github.com/dawnbell795/iTshirt.git
+   b) GitHub에 로그인 하기
+      $ git push origin master
